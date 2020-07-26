@@ -138,12 +138,16 @@ header {
 /* Break into Tech
 ------------------------------- */
 
+.like-pro-wrap {
+    background: url(../images/code-of-conduct/like-pro-img.png) no-repeat;
+    background-size: cover;
+}
+
 .like-pro {
     color: var(--white);
     padding: 104px 0 100px;
     margin-top: 200px;
     margin-bottom: 28px;
-    background-color: var(--like-pro-bg-color);
 }
 
 .like-pro h2 {
@@ -216,8 +220,4 @@ footer .nav-link:hover {
         line-height: 48px;
     }
     
-    .like-pro {
-        background: url(../images/code-of-conduct/like-pro-img-01.png) no-repeat -15% top, url(../images/code-of-conduct/like-pro-img-02.png) no-repeat 100% 65%, url(../images/code-of-conduct/like-pro-img-03.png) no-repeat 125% bottom;
-        background-color: var(--like-pro-bg-color);
-    }
 }
