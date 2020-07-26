@@ -1,0 +1,223 @@
+/* Typography
+------------------------------- */
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta-Thin.woff") format("woff"),
+         url("../fonts/Averta-Thin.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta.woff") format("woff"),
+         url("../fonts/Averta.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta-Semibold.woff") format("woff"),
+         url("../fonts/Averta-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta-Bold.woff") format("woff"),
+         url("../fonts/Averta-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+/* Custom Properties 
+------------------------------- */
+
+:root {
+    --primary-font: "Averta", sans-serif;
+    --primary-color: #514949;
+    --secondary-color: #E7332B;
+    --banner-bg-color: #F2EBE9;
+    --like-pro-bg-color: #0B0B0B;
+    --facebook-color: #3b5998;
+    --twitter-color: #00acee;
+}
+
+/* Bootstrap Overrides
+------------------------------- */
+
+.btn {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 0;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    border-color: var(--secondary-color) !important;
+    background: var(--secondary-color) !important;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* Global Styles
+------------------------------- */
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Navigation
+------------------------------- */
+
+header {
+    background: var(--banner-bg-color);
+}
+
+.join-startng {
+    background: var(--secondary-color);
+}
+
+/* Masthead
+------------------------------- */
+
+.masthead {
+    padding: 142px 0 136px;
+    margin-bottom: 40px;
+    background: var(--banner-bg-color);
+}
+
+.page-title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--secondary-color);
+}
+
+.masthead p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+/* Code of Conduct
+------------------------------- */
+
+.coc {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: .7px solid rgb(81, 73, 73, .35);
+}
+
+.last-coc {
+    padding-top: 80px;
+    padding-bottom: 41px;
+}
+
+.coc h2 {
+    color: var(--secondary-color);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.coc p,
+.last-coc p {
+    max-width: 1244px;
+    opacity: .9;
+}
+
+/* Break into Tech
+------------------------------- */
+
+.like-pro {
+    color: var(--white);
+    padding: 104px 0 100px;
+    margin-top: 200px;
+    margin-bottom: 28px;
+    background-color: var(--like-pro-bg-color);
+}
+
+.like-pro h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 48px;
+}
+
+.like-pro a {
+    margin-bottom: 15px;
+    color: var(--white);
+    font-weight: normal;
+}
+
+/* Footer
+------------------------------- */
+
+footer {
+    margin-top: 121px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+footer h4,
+.copyright {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer h4 {
+    margin-bottom: 24px;
+}
+
+footer .nav-link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: var(--primary-color);
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+.facebook-link {
+    color: var(--facebook-color);
+    font-size: 20px;
+}
+
+.twitter-link {
+    color: var(--twitter-color);
+    font-size: 20px;
+}
+
+.copyright {
+    font-weight: bold;
+    margin-top: 56px;
+    padding: 32px 0 46px;
+    border-top: 0.7px solid #514949;
+}
+
+/* Media Queries
+------------------------------- */
+
+@media (min-width: 992px) {
+
+    .masthead p {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    
+    .like-pro {
+        background: url(../images/code-of-conduct/like-pro-img-01.png) no-repeat -15% top, url(../images/code-of-conduct/like-pro-img-02.png) no-repeat 100% 65%, url(../images/code-of-conduct/like-pro-img-03.png) no-repeat 125% bottom;
+        background-color: var(--like-pro-bg-color);
+    }
+}
